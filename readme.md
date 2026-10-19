@@ -1,0 +1,36 @@
+# [Time-Frequency Analysis]Fast Continuous Wavelet Transform (fCWT) for Real-time, High-Quality, Noise-Resistant Time-Frequency Analysis [with Python code]
+
+Currently, the spectral analysis of signals is either dominated by a dominant speed-accuracy tradeoff or neglects the non-stationary characteristics of the signal. Here, we introduce an open-source algorithm for calculating Fast Continuous Wavelet Transform (fCWT). The parallel environment of fCWT separates scale-independent and scale-dependent operations, while utilizing optimized Fast Fourier Transforms and downsampled wavelets. fCWT is benchmarked against eight competitive algorithms for speed and noise resistance, validating synthetic electroencephalograms and in vivo extracellular local field potential data. fCWT offers accuracy comparable to CWT with 100 times higher spectral resolution than its equivalent speed algorithms, and 122x and 34x faster than reference and fastest state-of-the-art implementations, respectively. We demonstrate its real-time performance, such as real-time analysis that exceeds what has been confirmed. fCWT provides a better balance between speed and accuracy, thus enabling real-time, wideband, high-quality time-frequency analysis of non-stationary noise signals.
+Signals require independent processing from their sources to generate, transform, extract, and interpret the information they carry. A widely used method for interpreting (i.e., extracting and analyzing) recurring patterns in signals is the Fourier Transform (FT), which converts the time function into a complex value function representing the amplitude of frequencies. FT assumes that the signal is stationary. In other words, it is a random process where the marginal and joint density functions do not depend on the choice of the time origin. However, this assumption is often violated in real-world scenarios. Therefore, FT cannot be reliably processed for real-world non-stationary signals. To avoid the issue of non-stationarity, advanced algorithms exist that analyze signals based on the decomposition of basic signals well positioned (or boxed) in both time and frequency. These include Short Time Fourier Transform (STFT), also known as the Gabor Transform, and Wavelet Transform (WT).
+Short-time Fourier Transform (STFT) and Wavelet transform are very similar, but they use window functions and short wavelets localized in time and frequency, rather than pure waves, to extract time-spectral information. The disadvantage of STFT is that it uses a fixed width window function, so the frequency analysis is limited to frequencies close to the window width. Additionally, chopping signals in short fixed-width windows can disrupt the signal's properties. Therefore, the frequency analysis is affected.
+WT overcomes the disadvantages of STFT by not relying on window functions. Instead, it represents signals using a set of basis functions that expand and contract with frequency, ensuring high resolution throughout the spectrum. As a result, WT suffers from high computational load. This prohibits its use with low-end hardware and for real-time applications because real-time computation requires algorithmic computation time less than the duration of the signal.
+To reduce the computational burden of wavelet transforms, Discrete Wavelet Transform (DWT) has been proposed, which applies coarse logarithmic discreteization. This makes DWT suitable for data compression, but simultaneously makes it unsuitable for detailed analysis, as it cannot analyze complex time-frequency details (as shown in Figure 2). To this end, a true WT-expensive continuous wavelet transform (CWT) - also known as integral wavelet transform (IWT) - is necessary. CWT provides high-resolution representations in both time and frequency domains by using approximate continuous discreteization. Its continuous time and frequency scales better support complex time-frequency analysis. Therefore, CWT is often described as a mathematical microscope for data analysis (Figure 2).
+In this resource paper, we introduce the open-source Fast Continuous Wavelet Transform (fCWT), bringing real-world practicality to real-time, high-resolution CWT (e.g., biosignals 11 -13, cybersecurity 14, 15, and renewable energy management 16, 17; Figure 1). Next, we evaluate the performance of fCWT in benchmark studies, and then validate the use of fCWT on synthetic EEG and intracranial electrophysiological data. We conclude with a brief discussion.
+Figure 1: Resource paper illustration.
+Conclusion: The performance of fCWT is benchmarked against six widely used CWT implementations, followed by triple validation accuracy, resolution, and throughput, respectively using synthetic data, human EEG data, and high-density in vivo extracellular rodent electrophysiology.
+Example code simulation results
+
+## Images
+
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](01.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](02.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](03.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](04.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](05.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](06.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](07.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](08.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](09.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](10.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](11.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](12.jpg)
+![(Time-Frequency Analysis)Fast Continuous Wavelet Transform (fCWT) for real-time, high-quality, and noise-resistant time-frequency analysis [with Python code]](13.jpg)
+
+<!-- PAYMENT_BLOCK -->
+
+## Get this dataset
+
+- Payment link (Stripe): [Buy now](https://buy.stripe.com/3cs8yP7sY87d0vu9AB)
+- Payment QR code: ![Payment QR code](pay.png)
+
+<!-- /PAYMENT_BLOCK -->
